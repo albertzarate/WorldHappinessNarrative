@@ -20,24 +20,89 @@
         <div class="info">
           <h2>World Map of Happiness</h2>
           <div id="root"></div>
-          <div id="annotation"></div>
           <script src="bundle.js"></script>
+          <script>
+            const annotations = [
+              {
+                note: {
+                  label: "Northern Europe has the happiest people!",
+                  title: "Happiest Countries"
+                },
+                x: 500,
+                y: 190,
+                dy: -50,
+                dx: 200
+              }].map(function(d){ d.color = "#E8336D"; return d})
+      
+              const makeAnnotations = d3.annotation()
+                .type(d3.annotationLabel)
+                .annotations(annotations)
+      
+              d3.select("svg")
+                .append("g")
+                .attr("class", "annotation-group")
+                .call(makeAnnotations)
+          </script>
         </div>
       </div>
       <div class="slide">
         <img src="2.png" alt="">
         <div class="info">
           <h2>Happiest Countries</h2>
-          <div id="root"></div>
+          <div id="root2"></div>
           <script src="bundle.js"></script>
+          <script>
+            const annotations = [
+              {
+                note: {
+                  label: "Happier countries tend to have higher GDP per Capita, more social support, higher life expectancy, and more Freedom!",
+                  title: "Factors"
+                },
+                x: 500,
+                y: 190,
+                dy: -50,
+                dx: 200
+              }].map(function(d){ d.color = "#E8336D"; return d})
+      
+              const makeAnnotations = d3.annotation()
+                .type(d3.annotationLabel)
+                .annotations(annotations)
+      
+              d3.select("svg")
+                .append("g")
+                .attr("class", "annotation-group")
+                .call(makeAnnotations)
+          </script>
         </div>
       </div>
       <div class="slide">
         <img src="3.png" alt="">
         <div class="info">
           <h2>Least Happiest Countries</h2>
-          <div id="root"></div>
+          <div id="root3"></div>
           <script src="bundle.js"></script>
+          <script>
+            const annotations = [
+              {
+                note: {
+                  label: "Sadder countries tend to have lower GDP per Capita, less social support, less life expectancy, more corruption, and more dystopian traits!",
+                  title: "Factors"
+                },
+                x: 500,
+                y: 190,
+                dy: -50,
+                dx: 200
+              }].map(function(d){ d.color = "#E8336D"; return d})
+      
+              const makeAnnotations = d3.annotation()
+                .type(d3.annotationLabel)
+                .annotations(annotations)
+      
+              d3.select("svg")
+                .append("g")
+                .attr("class", "annotation-group")
+                .call(makeAnnotations)
+          </script>
         </div>
       </div>
       <div class="navigation">

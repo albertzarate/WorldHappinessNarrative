@@ -34,10 +34,24 @@ circle {
   opacity: 0.3;
 }
 
+.tick line {
+  stroke: #C0C0BB;
+}
+.tick text {
+  fill: #ffffff;
+}
+.mark {
+  fill: #137B80;
+}
+.axis-label {
+  font-size: 2.5em;
+  fill: #ffffff;
+}
+
 .img-slider{
   position: relative;
   width: 1200px;
-  height: 750px;
+  height: 870px;
   margin: 15px;
   background: #1D212B;
 }
