@@ -15,6 +15,6 @@ export const BarMarks = ({
       width={xScale(xValue(d))}
       height={yScale.bandwidth()}
     >
-      <title>{tooltipFormat(xValue(d))}</title>
+      <title>"Score: "+{tooltipFormat(xValue(d))}</title>
     </rect>
   ));

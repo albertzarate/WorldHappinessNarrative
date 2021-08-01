@@ -13,8 +13,8 @@ import { AxisLeft } from './AxisLeft';
 
 const width = 1200;
 const height = 750;
-const mapMargin = { top: 60, right: 30, bottom: 65, left: 85 };
-const graphMargin = { top: 50, right: 90, bottom: 120, left: 120 };
+const mapMargin = { top: 0, right: 30, bottom: 65, left: 85 };
+const graphMargin = { top: 0, right: 90, bottom: 270, left: 120 };
 const xAxisLabelOffset = 50;
 
 const App = () => {
@@ -176,17 +176,19 @@ const MakeGraph2 = () => {
 
 ReactDOM.render(
   <div>
-    <svg width={width} height={height-600}></svg>
+    <svg width={width} height={height-600} id="svg1"></svg>
     <App/>,
   </div>, document.getElementById('root')
 );
 ReactDOM.render(
   <div>
+    <svg width={width} height={height-600} id="svg2"></svg>
     <MakeGraph/>,
   </div>, document.getElementById('root2')
 );
 ReactDOM.render(
   <div>
+    <svg width={width} height={height-600} id="svg3"></svg>
     <MakeGraph2/>,
   </div>, document.getElementById('root3')
 );

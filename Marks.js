@@ -24,7 +24,6 @@ export const Marks = ({
         <path
           fill={d ? colorScale(colorValue(d)) : missingDataColor}
           d={path(feature)}>
-          <title>{tooltipFormat(d['Country'])}</title>
         </path>
       );
     })}

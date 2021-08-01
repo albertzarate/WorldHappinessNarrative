@@ -22,26 +22,25 @@
           <div id="root"></div>
           <script src="bundle.js"></script>
           <script>
-            const annotations = [
+            const annotations1 = [
               {
                 note: {
                   label: "Northern Europe has the happiest people!",
                   title: "Happiest Countries"
                 },
-                x: 500,
-                y: 190,
+                x: 630,
+                y: 150,
                 dy: -50,
                 dx: 200
               }].map(function(d){ d.color = "#E8336D"; return d})
       
-              const makeAnnotations = d3.annotation()
+              const makeAnnotations1 = d3.annotation()
                 .type(d3.annotationLabel)
-                .annotations(annotations)
+                .annotations(annotations1)
       
-              d3.select("svg")
+              d3.select("#svg1")
                 .append("g")
-                .attr("class", "annotation-group")
-                .call(makeAnnotations)
+                .call(makeAnnotations1)
           </script>
         </div>
       </div>
@@ -52,26 +51,24 @@
           <div id="root2"></div>
           <script src="bundle.js"></script>
           <script>
-            const annotations = [
+            const annotations2 = [
               {
                 note: {
                   label: "Happier countries tend to have higher GDP per Capita, more social support, higher life expectancy, and more Freedom!",
                   title: "Factors"
                 },
-                x: 500,
-                y: 190,
+                x: 660,
+                y: 180,
                 dy: -50,
                 dx: 200
-              }].map(function(d){ d.color = "#E8336D"; return d})
+              }].map(function(d){ d.color = "#FFFFFF"; return d})
       
-              const makeAnnotations = d3.annotation()
-                .type(d3.annotationLabel)
-                .annotations(annotations)
+              const makeAnnotations2 = d3.annotation()
+                .annotations(annotations2)
       
-              d3.select("svg")
+              d3.select("#svg2")
                 .append("g")
-                .attr("class", "annotation-group")
-                .call(makeAnnotations)
+                .call(makeAnnotations2)
           </script>
         </div>
       </div>
@@ -82,26 +79,24 @@
           <div id="root3"></div>
           <script src="bundle.js"></script>
           <script>
-            const annotations = [
+            const annotations3 = [
               {
                 note: {
                   label: "Sadder countries tend to have lower GDP per Capita, less social support, less life expectancy, more corruption, and more dystopian traits!",
                   title: "Factors"
                 },
-                x: 500,
-                y: 190,
+                x: 270,
+                y: 180,
                 dy: -50,
                 dx: 200
-              }].map(function(d){ d.color = "#E8336D"; return d})
+              }].map(function(d){ d.color = "#000000"; return d})
       
-              const makeAnnotations = d3.annotation()
-                .type(d3.annotationLabel)
-                .annotations(annotations)
+              const makeAnnotations3 = d3.annotation()
+                .annotations(annotations3)
       
-              d3.select("svg")
+              d3.select("#svg3")
                 .append("g")
-                .attr("class", "annotation-group")
-                .call(makeAnnotations)
+                .call(makeAnnotations3)
           </script>
         </div>
       </div>

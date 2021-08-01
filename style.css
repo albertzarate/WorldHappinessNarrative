@@ -34,6 +34,10 @@ circle {
   opacity: 0.3;
 }
 
+.annotation-note-label {
+  font-size: 0.7em;
+}
+
 .tick line {
   stroke: #C0C0BB;
 }
