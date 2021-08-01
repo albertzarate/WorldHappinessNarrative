@@ -1,1 +1,1 @@
-A narrative visualization of world happiness in 2020 given the covid-19 pandemic.
+A narrative visualization of world happiness in 2020.
